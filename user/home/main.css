@@ -1,0 +1,100 @@
+/* Hero Section Start */
+.home {
+  color: #ffffff;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.text1 {
+  font-size: 60px;
+  color: #ffde00;
+}
+
+.text2 {
+  font-size: 60px;
+}
+
+.iklan-text {
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.home .btn {
+  margin-top: 20px;
+  background-color: #ffde00;
+  color: #bf0000;
+}
+
+.home img {
+  max-width: 80%;
+}
+
+/* Hero Section End */
+
+/* Gelombang Start */
+#wave-container {
+  position: relative;
+  margin-top: -10px;
+}
+
+/* Gelombang End */
+
+/* prjects start */
+#projects {
+  background-color: #ffde00;
+}
+
+.card-text {
+  font-family: "Lato", sans-serif;
+}
+
+/* projects end */
+
+/* bakpia day start */
+#bd {
+  background-color: #ffde00;
+  text-align: center;
+}
+
+.gunungan1-text {
+  font-size: 50px;
+}
+
+.gunungan2-text {
+  padding: 20px;
+  font-size: 19px;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+#bd img {
+  max-width: 80%;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .bakpia-text,
+  .fadila-text {
+    font-size: 40px;
+  }
+
+  .iklan-text {
+    font-size: 16px;
+  }
+
+  .hero-section .btn {
+    margin-top: 10px;
+  }
+
+  .gunungan1-text {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .gunungan2-text {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
