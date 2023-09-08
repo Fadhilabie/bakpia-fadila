@@ -1,17 +1,13 @@
 /* Hero Section Start */
 .home {
-  color: #ffffff;
+  color: #fff;
   padding-top: 40px;
   text-align: center;
 }
 
-.text1 {
+.text1, .text2 {
   font-size: 60px;
   color: #ffde00;
-}
-
-.text2 {
-  font-size: 60px;
 }
 
 .iklan-text {
@@ -31,18 +27,14 @@
   max-width: 80%;
 }
 
-/* Hero Section End */
-
 /* Gelombang Start */
 #wave-container {
   position: relative;
   margin-top: -10px;
 }
 
-/* Gelombang End */
-
-/* prjects start */
-#projects {
+/* Projects Start */
+#projects, #bd {
   background-color: #ffde00;
 }
 
@@ -50,14 +42,7 @@
   font-family: "Lato", sans-serif;
 }
 
-/* projects end */
-
-/* bakpia day start */
-#bd {
-  background-color: #ffde00;
-  text-align: center;
-}
-
+/* Bakpia Day Start */
 .gunungan1-text {
   font-size: 50px;
 }
@@ -69,14 +54,60 @@
   text-align: justify;
 }
 
-#bd img {
+#bd img, .home img {
   max-width: 80%;
 }
 
-/* responsive */
+/* Product Section Start */
+.product {
+  background-color: #ffde00;
+}
+
+.product .populer h3 {
+  font-size: 25px;
+}
+
+.populer i {
+  font-size: 2rem;
+  color: #bf0000;
+}
+
+.product-populer .card-product {
+  width: 490px;
+}
+
+.product-populer .img-box {
+  border: 2px solid #bf0000;
+}
+
+.detail-product .label {
+  background-color: #bf0000;
+  width: 100px;
+  color: #ffffff;
+}
+
+.detail-product a {
+  border: 2px solid #bf0000;
+  color: #bf0000;
+}
+
+.detail-product a:hover {
+  background-color: #bf0000;
+  color: #ffde00;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .bakpia-text,
-  .fadila-text {
+  .populer i {
+    font-size: 1.5rem;
+  }
+
+  .product-populer .card-product {
+    width: 260px;
+  }
+
+  /* Additional Responsive Styles */
+  .bakpia-text, .fadila-text {
     font-size: 40px;
   }
 
@@ -88,13 +119,8 @@
     margin-top: 10px;
   }
 
-  .gunungan1-text {
+  .gunungan1-text, .gunungan2-text {
     font-size: 40px;
     padding: 10px;
-  }
-
-  .gunungan2-text {
-    padding: 10px;
-    font-size: 16px;
   }
 }
