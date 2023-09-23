@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato-Bold', sans-serif;
     --main-hue: 300;
     --input-bg: hsla(var(--main-hue), 100%, 10%, 50%);
     --input-bg-hover: hsla(var(--main-hue), 100%, 10%, 20%);
