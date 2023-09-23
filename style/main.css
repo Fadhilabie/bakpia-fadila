@@ -1,5 +1,6 @@
 /* Hero Section Start */
 .home {
+  background-color: #bf0000;
   color: #fff;
   padding-top: 40px;
   text-align: center;
@@ -29,6 +30,7 @@
 
 /* Gelombang Start */
 #wave-container {
+  background-color: #bf0000
   position: relative;
   margin-top: -10px;
 }

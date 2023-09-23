@@ -15,10 +15,6 @@
   transition: 0.2s linear;
 }
 
-body {
-  background-color: #bf0000;
-}
-
 html {
   overflow-x: hidden;
   scroll-padding-top: 7rem;
