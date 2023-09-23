@@ -1,3 +1,4 @@
+// Swiper
 var swiper = new Swiper(".mySwiperPopuler", {
   grabCursor: true,
   centeredSlides: false,
@@ -9,8 +10,7 @@ var swiper = new Swiper(".mySwiperPopuler", {
   },
 });
 
-// JavaScript untuk mengatur perilaku navbar
-  // Fungsi untuk mengubah kelas aktif pada tautan navbar
+// Navbar
   function setActiveNavLink(link) {
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach((navLink) => {
@@ -19,7 +19,6 @@ var swiper = new Swiper(".mySwiperPopuler", {
     link.classList.add("active");
   }
 
-  // Fungsi untuk mengarahkan ke bagian "project"
   function scrollToProject() {
     const projectSection = document.getElementById("project");
     if (projectSection) {
@@ -27,7 +26,6 @@ var swiper = new Swiper(".mySwiperPopuler", {
     }
   }
 
-  // Event listener untuk mengatur perilaku saat mengklik "Service" di navbar
   const serviceNavLink = document.querySelector(".nav-link[href='#project']");
   if (serviceNavLink) {
     serviceNavLink.addEventListener("click", (event) => {
@@ -36,10 +34,8 @@ var swiper = new Swiper(".mySwiperPopuler", {
       setActiveNavLink(serviceNavLink); // Aktifkan kelas "active" pada tautan "Service"
     });
   }
-  /**
-     * HERO SLIDER
-     */
 
+// hero slider
 const heroSlider = document.querySelector("#myCarousel");
 const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
 const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
@@ -78,10 +74,7 @@ const slidePrev = function () {
 
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
-/**
- * auto slide
- */
-
+// auto slide
 let autoSlideInterval;
 
 const autoSlide = function () {
