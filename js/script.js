@@ -11,29 +11,46 @@ var swiper = new Swiper(".mySwiperPopuler", {
 });
 
 // Navbar
-  function setActiveNavLink(link) {
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach((navLink) => {
-      navLink.classList.remove("active");
-    });
-    link.classList.add("active");
-  }
+function setActiveNavLink(link) {
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((navLink) => {
+    navLink.classList.remove("active");
+  });
+  link.classList.add("active");
+}
 
-  function scrollToProject() {
-    const projectSection = document.getElementById("project");
-    if (projectSection) {
-      projectSection.scrollIntoView({ behavior: "smooth" });
-    }
+function scrollToProject() {
+  const projectSection = document.getElementById("project");
+  if (projectSection) {
+    projectSection.scrollIntoView({ behavior: "smooth" });
   }
+}
 
-  const serviceNavLink = document.querySelector(".nav-link[href='#project']");
-  if (serviceNavLink) {
-    serviceNavLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Hindari mengikuti tautan langsung
-      scrollToProject(); // Arahkan ke "project"
-      setActiveNavLink(serviceNavLink); // Aktifkan kelas "active" pada tautan "Service"
-    });
+const serviceNavLink = document.querySelector(".nav-link[href='#project']");
+if (serviceNavLink) {
+  serviceNavLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Hindari mengikuti tautan langsung
+    scrollToProject(); // Arahkan ke "project"
+    setActiveNavLink(serviceNavLink); // Aktifkan kelas "active" pada tautan "Service"
+  });
+}
+
+// Tambahkan kode untuk tautan "About"
+function scrollToAbout() {
+  const aboutSection = document.getElementById("ingredients");
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: "smooth" });
   }
+}
+
+const aboutNavLink = document.querySelector(".nav-link[href='#ingredients']");
+if (aboutNavLink) {
+  aboutNavLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Hindari mengikuti tautan langsung
+    scrollToAbout(); // Arahkan ke "about"
+    setActiveNavLink(aboutNavLink); // Aktifkan kelas "active" pada tautan "About"
+  });
+}
 
 // hero slider
 const heroSlider = document.querySelector("#myCarousel");

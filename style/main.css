@@ -14,7 +14,12 @@
 .iklan-text {
   padding-top: 20px;
   font-size: 25px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.order-text{
+  font-family: 'Lato-Bold'; 
   text-align: center;
 }
 
@@ -40,19 +45,19 @@
 }
 
 .card-text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-Bold";
 }
 
 /* Bakpia Day Start */
 .gunungan1-text {
-  font-size: 50px;
+  font-size: 19px;
 }
 
 .gunungan2-text {
-  padding: 20px;
   font-size: 19px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-Bold";
   text-align: justify;
+  text-decoration: none;
 }
 
 #bd img, .home img {
@@ -116,9 +121,6 @@
   letter-spacing: 25px;
 }
 
-/* Banner End */
-
-
 /* Banner styles */
 .dark-image {
   filter: brightness(20%);
@@ -140,8 +142,14 @@
 }
 
 /* Carousel styles */
+.carousel.slide{
+  padding-top: 50px;
+  background-color: #fde000;
+}
+
 .carousel-item {
   position: relative;
+  background-color: #fde000;
 }
 
 .carousel-item .card {
@@ -183,7 +191,7 @@
 }
 
 .carousel-indicators .active {
-  background-color: #fde000;
+  background-color: #fde000 !important;
 }
 
 /* ingredients start */
